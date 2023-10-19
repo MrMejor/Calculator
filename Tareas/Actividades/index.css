@@ -1,0 +1,31 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial, sans-serif;
+    text-align: left;
+    border-top: 8px solid rgb(111, 111, 111);
+    border-right: 1px solid#c9c9c9;
+    width: 50%;
+    border-collapse: collapse;
+}
+td, th {
+    width: contents;
+    border-width: 1px solid #ddd;
+    /* border: 2px solid #dddddd; */
+    text-align: left;
+    /* padding: 0px; */
+    border-spacing: 0; /*  Same as cellspacing="0" */
+    border-collapse: collapse;
+    border-right:4px solid #c9c9c9;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  th{
+    background-color: #ddd
+  }
+  .null{
+    text-align: right;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
