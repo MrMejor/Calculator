@@ -9,8 +9,11 @@ li{
     color: white;
     display: inline-block;
     font-size: 15px;
-    align-items: center;
+    /* align-items: center; */
 }
+/* ul{
+    text-align: center;
+} */
 button{
     width: 25px;
     height: 18px;
