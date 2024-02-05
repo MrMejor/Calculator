@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: darkgrey;
+}
+
+nav{
+    height: 10%;
+    background-color: azure;
+}
+
+main{
+    height: 80%;
+    background-color: aliceblue;
+    overflow: scroll;
+}
+
+footer{
+    height: 10%;
+    background-color:antiquewhite;
+}
+
+section{
+    border: 1px solid black;
+    width: calc((100% / 3) - 5%);
+    height: 20%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 1%;
+    overflow: scroll;
+    display: inline-block;
+}
+
+span{
+    font-size: large;
+}
+
+/* diseño pantalla para mobil*/
+@media (max-width: 768px){
+    section{
+        width: calc(100% - 32px);
+    }
+    span{
+        font-size: 25px;
+    }
+}
+/* Diseño para tablet */
+@media (min-width: 769px) AND (max-width: 1024px){
+    section{
+        width: calc((100% /2)+400px);
+    }
+    span{
+        font-size: 23px;
+    }
+}

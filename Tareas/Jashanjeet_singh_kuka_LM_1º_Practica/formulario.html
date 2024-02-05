@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <main>
+        <form action="#">
+            <div>
+                <img src="img/imagen.png" alt="Bank Logo">
+            </div>
+            <div>
+                <h1>Transaction</h1>
+            </div>
+            <section class="one">
+            
+                <p><b>Origen IBAN</b></p>
+            <label for="Origen">
+
+            <!-- This part is for codigo de pais -->
+            <input type="text"  name="Origen" id="Origen" placeholder="ES" value="ES">
+
+            <!-- This part is for Dígito de control -->
+            <input type="text"  name="DC" id="DC1" placeholder="DC" value="70" min="1" max="99">
+
+            <!-- This part is for Entidad Number of IBAN -->
+            <input type="text"  name="Entidad" id="Entidad" placeholder="Entidad" min="0" max="9999" maxlength="4">
+
+             <!-- This part is for Oficina Number of IBAN -->
+            <input type="text"  name="Oficina" id="Oficina" placeholder="Oficina" min="0" max="9999" maxlength="4">
+
+            <!-- This part is for Dígito de control -->
+            <input type="text"  name="DC" id="DC2" placeholder="DC" maxlength="2">
+
+            <!-- This part is for Nº de cuenta of IBAN -->
+            <input type="text"  name="NºCuenta" id="NºCuenta" placeholder="NºCuenta" min="0" max="999999999" maxlength="10">
+        </label>
+        </section>
+        <!-- this for sepration between reciver  -->
+        <section class="two">
+            <p><b>Destino IBAN & Nombre de Titular</b></p>
+            <label for="Destino & Nombre de Titular">
+
+            <!-- This part is for codigo de pais -->
+            <input type="text"  name="Origen" id="Origen" placeholder="ES" value="ES">
+
+            <!-- This part is for Dígito de control -->
+            <input type="text"  name="DC" id="DC1" placeholder="DC" value="70" min="1" max="99" maxlength="2">
+
+            <!-- This part is for Entidad text of IBAN -->
+            <input type="text"  name="Entidad" id="Entidad" placeholder="Entidad" min="0" max="9999" maxlength="4">
+
+             <!-- This part is for Oficina text of IBAN -->
+            <input type="text"  name="Oficina" id="Oficina" placeholder="Oficina" min="0" max="9999" maxlength="4">
+
+            <!-- This part is for Dígito de control -->
+            <input type="text"  name="DC" id="DC2" placeholder="DC" min="1" max="99" maxlength="2">
+
+            <!-- This part is for Nº de cuenta of IBAN -->
+            <input type="text"  name="NºCuenta" id="NºCuenta" placeholder="NºCuenta" min="0" max="9999999999" maxlength="10">
+        </label>
+            <!-- This paart is for inserting the name and surname of reciver -->
+            <br>
+            <p><b>Nombre</b></p>
+            <label for="#">
+            <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
+            
+            <input type="text" name="Nombre" id="Nombre" placeholder="Apellido">
+            </label>
+            <section>
+                <p><b> Conceoto :</b></p>
+                <label for="textarea">
+                
+                <textarea name="concepto" id="Concepto" placeholder="Concepto" cols="41" rows="1" maxlength="50"></textarea> 
+            </label>
+            </section>
+        </section>
+        <br>
+        <section>
+            <label for="Valor"><b>Valor    €:</b>
+            <input type="text" name="Valor" id="Valor" placeholder="Valor" maxlength="3" min="0.50" max="500">
+            </label>
+        <br>
+            <label for="Fecha"><b>Fecha:</b> 
+            <input type="date" name="Fecha" id="Fecha" placeholder="Fecha">
+            </label>
+        </section>
+        <section class="button">
+        <button id="b2" type="reset">Borar</button>
+        <button id="b1" type="submit">Enviar
+        </section>
+    </form>
+</main>
+</body>
+</html>

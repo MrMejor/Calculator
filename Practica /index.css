@@ -1,8 +1,6 @@
-body{
-
-}
 table,h1{
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     font-family: arial, sans-serif;
     text-align: left;
     border-right: 1px solid#c9c9c9;
@@ -15,14 +13,12 @@ h4{
     text-align: right;
 }
 #footer{
+    width: fit-content;
     margin-left: 25%;
-    color: white;
-    text-decoration: none;
-    background-color: #303030;
-    padding: 8px  16px;
+    cursor: pointer;
   }
 td, th {
-    width: contents;
+    /* width: contents; */
     border-width: 1px solid #ddd;
     /* border: 2px solid #dddddd; */
     text-align: left;
@@ -34,7 +30,6 @@ td, th {
     padding: 5px;
   }
   th{
-    cursor: pointer;
     color: white;
     background-color: #303030
   }

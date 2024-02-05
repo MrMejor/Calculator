@@ -1,0 +1,122 @@
+/* here we will pu our Body tag to modify its margin- left so it can be seprated from its borderit height width  */
+body{
+    margin-left: 12px;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(360deg, red, yellow);
+}
+
+main{
+    margin-top: 3%;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 35%;
+    height: 90%;
+    background-color: chocolate;
+}
+
+form{
+    width: 100%;
+}
+
+img{
+    margin-top: 35px;
+    width: 30%;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    width: 100px;
+    height: 20px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 12px;
+    align-items: center;
+}
+
+.two{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#Origen{
+    width: 18px;
+    background-color: rgb(228, 226, 226);
+    padding: 6px;
+    border: 0cm;
+}
+#DC1{
+    width: 30px;
+    background-color: rgb(228, 226, 226);
+    border: 0cm;
+    padding: 6px;
+} 
+
+#DC2{
+    width: 30px;
+    padding: 4px;
+}
+
+#Entidad{
+    width: 45px;
+    padding: 4px;
+}
+
+#Oficina{
+    width: 45px;
+    padding: 4px;
+}
+
+#NºCuenta{
+    width: 90px;
+    padding: 4px;
+}
+
+#Nombre{
+    width: 165px;
+}
+
+button{
+    border-radius: 20px;
+    margin: 5%;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+} 
+.button{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 70%;
+}
+@media screen AND (min-width:320px) AND (max-width: 768px) {
+    body{
+        background-image: linear-gradient(180deg, red, blue) ;
+    }
+    main{
+        width: 90%;
+        height: 90%;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
