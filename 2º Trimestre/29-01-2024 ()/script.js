@@ -224,4 +224,4 @@ for(let coche in coches )
  * Ejercicio 7.
  * Muestra todos los coches que están en venta.
  */
-for(let coche in coches)
+// for(let coche in coches)
