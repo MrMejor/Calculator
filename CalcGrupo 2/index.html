@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Calculadora</title> 
+<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <div class="container"> <!-- Inicio del contenedor principal de la calculadora -->
+        
+        <div class="calculator"> <!-- Contenedor para los botones de la calculadora -->
+         <div class="onoff">
+            <input type="checkbox" id="check" onclick="onOff()" class="modeSwitch">
+                <label for="check" class="btncheck"></label>
+         </div>
+            <form action="">
+            <div class="display">
+                <input type="text" id="pantalla" onkeydown="handleKeyPress(event)" oninput="restrictInput(event)" max="12" placeholder="0" > <!--Campo de entrada para mostrar los valores y resultados -->
+            </div>
+            <div>
+                <input type = "button" value = "CD" onclick = " clearDisplay()" class = "opretor">
+                <input type = "button" value = "DE" onclick = " clearLastDigit() " class = "opretor" >
+                <input type = "button" value = "^" onclick = "appendToDisplay('**') " class = "opretor">
+                <!-- <input type = "button" value = "^" onclick = "calculatePower() " class = "opretor"> -->
+                <!-- <input type="button" class="opretor" value="%" onclick="calculatePercentage('%')"> -->
+                <input type="button" class="opretor" value="%" onclick="percentage('%')">
+                <!-- <input type="checkbox" id="check" onclick="onOff()" class="modeSwitch onOff">
+                <label for="check" class="btncheck onOff"></label> -->
+            </div>
+            <div>
+                <input type = "button" value = "√" onclick = " calculateSquareRoot() " class = "opretor" >
+                <input type = "button" value = "(" onclick = " appendToDisplay('(') " class = "opretor" >
+                <input type = "button" value = ")" onclick = " appendToDisplay(')') " class = "opretor" >
+                <input type = "button" value = "*" onclick = " appendToDisplay('*') " class = "opretor" >
+            </div>
+            <div > <!-- Contenedor para los botones numéricos -->
+                <!-- Botones numéricos del 0 al 9 -->
+                <input type="button" value="7" onclick="appendToDisplay('7')" class="number-buttons">
+                <input type="button" value="8" onclick="appendToDisplay('8')" class="number-buttons">
+                <input type="button" value="9" onclick="appendToDisplay('9')" class="number-buttons">
+                <input type = "button" value = "-" onclick = " appendToDisplay('-') " class = "opretor" >
+            </div>
+            <div>
+                <input type="button" value="4" onclick="appendToDisplay('4')" class="number-buttons">
+                <input type="button" value="5" onclick="appendToDisplay('5')" class="number-buttons">
+                <input type="button" value="6" onclick="appendToDisplay('6')" class="number-buttons">
+                <input type = "button" value="+" onclick = "appendToDisplay('+') " class = "opretor" >
+            </div>
+            <div>
+                <input type="button" value="1" onclick="appendToDisplay('1')" class="number-buttons">
+                <input type="button" value="2" onclick="appendToDisplay('2')" class="number-buttons">
+                <input type="button" value="3" onclick="appendToDisplay('3')" class="number-buttons">
+                <input type = "button" value = "/" onclick = " appendToDisplay('/') " class = "opretor">
+                
+            </div>
+            <div>
+                <input type = "button" value = "00" onclick = " appendToDisplay('00') " class = "number-buttons" >
+                <input type = "button" value = "0" onclick = " appendToDisplay('0') " class = "number-buttons" >
+                <input type = "button" value = "." onclick = " appendToDisplay('.') " class = "opretor" >
+                <input type = "button" value = "=" onclick = "calculate()" class = "equal opretor"><!-- Botón para calcular el resultado -->
+            </div>
+        </form>
+        </div>
+       
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

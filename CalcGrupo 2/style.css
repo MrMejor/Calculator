@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.onoff{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.btncheck{
+    background-color: #d4453b;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.btncheck::before{
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    margin: 1.2px;
+    transition: 0.2px;
+}
+input:checked + .btncheck{
+    background-color: #44d43b;
+}
+input:checked + .btncheck::before{
+    transform: translate(25px);
+}
+#check{
+    display: none;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 40px;
+    /* box-shadow: 0 0 10px #3a4452, 0 0 12px #3a4452, 0 0 16px #3a4452, 0 0 12px #3a4452, inset 0 0 12px #3a4452, inset 0 0 12px #3a4452, inset 0 0 16px #3a4452, inset 0 0 16px #3a4452; */
+    font-weight: bold;
+    
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    box-shadow: -2px -2px 2px 2px;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+.opretor{
+    border-radius: 100px; 
+}
+.number-buttons{
+    border-radius: 100px;
+}
+.number-buttons:hover{
+    color: aqua;
+    box-shadow: -2px -2px 2px 2px;
+}
+form input.opretor{
+    box-shadow: -3px -3px 1;
+    color: rgba(251, 161, 27, 0.848);
+}
+.opretor:hover{
+    box-shadow: -3px -3px 1 rgba(246, 109, 109, 0.643);
+    color: rgba(246, 109, 109, 0.643);
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
